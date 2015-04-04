@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/reveal.js-3.0.0/css/reveal.css">
+		<link rel="stylesheet" href="assets/reveal.js-3.0.0/css/theme/solarized.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/reveal.js-3.0.0/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style type="text/css">
+			.reveal .sl-block {
+				display: block;
+				position: absolute;
+				z-index: auto;
+			}
+			.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+				text-transform: none;
+			}
+			.big-then-small {
+				/* initial state */
+				visibility: hidden;
+			}
+			.big-then-small.visible.current-fragment {
+				/* active and current */
+				font-size: 300%;
+			}
+			.big-then-small.visible {
+				/* active, but not current */
+				visibility: visible;
+				font-size: 10%;
+			}
+		</style>
+
+		<!--[if lt IE 9]>
+<script src="assets/reveal.js-3.0.0/lib/js/html5shiv.js"></script>
+<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 250px; height: auto;" data-block-id="c2c4f7cde7a9f555f060551480d5e619">
+					<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+						<h1>IoT infrastructure</h1>
+					</div>
+					</div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 0px; height: auto;" data-block-id="1452ae222b1e67fe93aa1f87d3ba7fbe">
+				<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+					<h1>things</h1>
+				</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 140px; height: auto;" data-block-id="98bddcfadd133d75cd533714bdd50d9d">
+					<div class="sl-block-content fragment big-then-small" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="0" style="z-index: 13;">
+						<h2>entity</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 280px; height: auto;" data-block-id="1a97648e53e9b81824f99cd798a1fdea">
+					<div class="sl-block-content fragment big-then-small" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="1" style="z-index: 11;">
+						<h2>device</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 416px; height: auto;" data-block-id="86b25c7e1ed1cb6ae6449b8285b13b4d">
+					<div class="sl-block-content fragment big-then-small" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="2" style="z-index: 14;">
+						<h2>gateway</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 560px; height: auto;" data-block-id="c40f410ffe4d41cf939041c8666b929e">
+					<div class="sl-block-content fragment big-then-small" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="3" style="z-index: 15;">
+						<h2>storage</h2>
+					</div>
+				</div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 0px; height: auto;" data-block-id="60f0a68d6752c2b7f419842af115e7dd">
+				<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+					<h1>devices</h1>
+				</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 140px; height: auto;" data-block-id="2049e15e02b039148458dac410b618c0">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="0" style="z-index: 13;">
+						<h2>physical entity</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 280px; height: auto;" data-block-id="99c62e1df25f8f9afe45ba03b87fdcae">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="1" style="z-index: 11;">
+						<h2>roles</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 416px; height: auto;" data-block-id="22a029dffc551d6d826f95ce7d26ff73">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="2" style="z-index: 14;">
+						<h2>connectivity</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 560px; height: auto;" data-block-id="6288d68e036fb281321f640919218b4b">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="3" style="z-index: 15;">
+						<h2>data protocols</h2>
+					</div>
+				</div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 0px; height: auto;" data-block-id="4bb60fcab205bd854eff62868749b747">
+				<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+					<h1>infrastructure</h1>
+				</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 140px; height: auto;" data-block-id="e9ae5713ddd1fc2d00561c30df7629d9">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="0" style="z-index: 13;">
+						<h2>providers</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 280px; height: auto;" data-block-id="3e3b935e7e4cc16a37095c53c48ffdbd">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="1" style="z-index: 11;">
+						<h2>consumers</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 416px; height: auto;" data-block-id="b064e2c7997a36bfba0289ea4745cced">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="2" style="z-index: 14;">
+						<h2>storage</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 560px; height: auto;" data-block-id="a44157e05672f6aa8d4da642f684517e">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="3" style="z-index: 15;">
+						<h2>m2m &amp; ui</h2>
+					</div>
+				</div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 0px; height: auto;" data-block-id="1ded4a096113afa974f7caff1a8e26e5">
+				<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+					<h1>javascript</h1>
+				</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 140px; height: auto;" data-block-id="493eb61cc6ae58e48d5a1381177ade43">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="0" style="z-index: 12;">
+						<h2>controllers</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 71px; left: 240px; top: 140px; height: auto;" data-block-id="1b8c89168d59d8d332dde1ade859b6e8">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="0" style="z-index: 15;">
+						<h2>±</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 280px; height: auto;" data-block-id="7f55665b63663034cbda67d7ecd666e2">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="1" style="z-index: 11;">
+						<h2>backend</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 71px; left: 240px; top: 280px; height: auto;" data-block-id="3b790008fcf2b67815e56a25ebb2b365">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="1" style="z-index: 17;">
+						<h2>✓</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 416px; height: auto;" data-block-id="5907d490be7b1ac419b243cb88c41989">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="2" style="z-index: 13;">
+						<h2>frontend</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 71px; left: 240px; top: 420px; height: auto;" data-block-id="31c8945f5e2df30844e16f854e7dbbc5">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="2" style="z-index: 18;">
+						<h2>✓</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 560px; height: auto;" data-block-id="6b543f6cdd5488d17fd5a6e5893f29f0">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="3" style="z-index: 14;">
+						<h2>mobile</h2>
+					</div>
+				</div>
+				<div class="sl-block" data-block-type="text" style="width: 71px; left: 240px; top: 560px; height: auto;" data-block-id="57671bded9f40596373b0dcab4a3ed34">
+					<div class="sl-block-content fragment" data-placeholder-tag="h2" data-placeholder-text="Subtitle" data-fragment-index="3" style="z-index: 19;">
+						<h2>✓</h2>
+					</div>
+				</div></section>
+				<section>
+					<p class="fragment big-then-small">grow</p>
+					<p class="fragment shrink">shrink</p>
+					<p class="fragment roll-in">roll-in</p>
+					<p class="fragment fade-out">fade-out</p>
+					<p class="fragment current-visible">visible only once</p>
+					<p class="fragment highlight-current-blue">blue only once</p>
+					<p class="fragment highlight-red">highlight-red</p>
+					<p class="fragment highlight-green">highlight-green</p>
+					<p class="fragment highlight-blue">highlight-blue</p>
+				</section>
+				<section>Single Horizontal Slide</section>
+				<section>
+					<section>Vertical Slide 1</section>
+					<section>Vertical Slide 2</section>
+				</section>
+				<section data-autoslide="2000">
+					<p>After 2 seconds the first fragment will be shown.</p>
+					<p class="fragment" data-autoslide="10000">After 10 seconds the next fragment will be shown.</p>
+					<p class="fragment">Now, the fragment is displayed for 2 seconds before the next slide is shown.</p>
+				</section>
+				<section data-transition="zoom">
+					<h2>This slide will override the presentation transition and zoom!</h2>
+				</section>
+
+				<section data-transition-speed="fast">
+					<h2>Choose from three transition speeds: default, fast or slow!</h2>
+				</section>
+
+
+				<section>
+					<h1>Reveal.js</h1>
+					<h3>The HTML Presentation Framework</h3>
+					<p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Hello There</h2>
+					<p>
+						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Vertical Slides</h2>
+						<p>Slides can be nested inside of each other.</p>
+						<p>Use the <em>Space</em> key to navigate through all slides.</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Basement Level 1</h2>
+						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+					</section>
+					<section>
+						<h2>Basement Level 2</h2>
+						<p>That's it, time to go back up.</p>
+						<br>
+						<a href="#/2">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<h2>Slides</h2>
+					<p>
+						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Point of View</h2>
+					<p>
+						Press <strong>ESC</strong> to enter the slide overview.
+					</p>
+					<p>
+						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+					</p>
+				</section>
+
+				<section>
+					<h2>Touch Optimized</h2>
+					<p>
+						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+					</p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Markdown support
+
+						Write content using inline or external Markdown.
+						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+
+						```
+						<section data-markdown>
+						  ## Markdown support
+
+						  Write content using inline or external Markdown.
+						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+						</section>
+						```
+					</script>
+				</section>
+
+				<section>
+					<section id="fragments">
+						<h2>Fragments</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's different types of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment roll-in">roll-in</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment current-visible">current-visible</p>
+						<p class="fragment highlight-red">highlight-red</p>
+						<p class="fragment highlight-blue">highlight-blue</p>
+					</section>
+				</section>
+
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						reveal.js comes with a few themes built in: <br>
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+				</section>
+
+				<section>
+					<section data-background="#dddddd">
+						<h2>Slide Backgrounds</h2>
+						<p>
+							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						</p>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+						<h2>Image Backgrounds</h2>
+						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+						<h2>Tiled Backgrounds</h2>
+						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div>
+					</section>
+				</section>
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+					</p>
+					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				</section>
+
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						You can override background transitions per-slide.
+					</p>
+					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+				</section>
+
+				<section>
+					<h2>Pretty Code</h2>
+					<pre><code data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+	var nodes = document.querySelectorAll( selector );
+
+	for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+	  var node = nodes[i];
+
+	  if( !node.className ) {
+		node.className += ' roll';
+	  }
+	}
+  }
+}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+
+				<section>
+					<h2>Marvelous List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Tabular Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Value</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							<tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							<tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							<tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Clever Quotes</h2>
+					<p>
+						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Speaker View</h2>
+					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+					<p>Press the <em>S</em> key to try it out.</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
+					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				</section>
+
+				<section>
+					<h2>Global State</h2>
+					<p>
+						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+						will be added as a class to the document element when the slide is open. This lets you
+						apply broader style changes, like switching the page background.
+					</p>
+				</section>
+
+				<section data-state="customevent">
+					<h2>State Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Take a Moment</h2>
+					<p>
+						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+					</p>
+				</section>
+
+				<section>
+					<h2>Much more</h2>
+					<ul>
+						<li>Right-to-left support</li>
+						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="http://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="assets/reveal.js-3.0.0/lib/js/head.min.js"></script>
+		<script src="assets/reveal.js-3.0.0/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/reveal.js-3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/reveal.js-3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/reveal.js-3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/reveal.js-3.0.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/reveal.js-3.0.0/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/reveal.js-3.0.0/plugin/notes/notes.js', async: true }
+				]
+			});
+
+			Reveal.addEventListener( 'fragmentshown', function( event ) {
+				console.log ('shown', event);
+				// event.fragment = the fragment DOM element
+			} );
+
+			Reveal.addEventListener ('fragmenthidden', function (xxx) {
+				console.log ('hidden', xxx);
+			});
+		</script>
+
+	</body>
+</html>
