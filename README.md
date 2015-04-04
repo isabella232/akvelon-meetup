@@ -1,3 +1,9 @@
+Links:
+
+ * [cuwire IDE](http://cuwire.io)
+ * [cordova](http://cordova.io)
+ * [node.js](http://nodejs.org)
+
 Boards with wireless:
 
  * rfduino
