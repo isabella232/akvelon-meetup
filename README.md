@@ -15,6 +15,7 @@ cordova plugin add com.megster.cordova.rfduino
 cordova plugin add ~/work/cordova/plugins/me.apla.cordova.http-client
 cordova prepare ios
 cd ..
+npm install -g dataflo.ws
 mkdir storage-dataflows
 cd storage-dataflows/
 dataflows init
