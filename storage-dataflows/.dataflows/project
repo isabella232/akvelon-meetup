@@ -1,0 +1,81 @@
+{
+	"db": "<db>",
+	"debug": "<#false for production>",
+	"daemon": {
+		"http": {
+			"initiator": [
+				"http"
+			]
+		}
+	},
+	"initiator": {
+		"token": {
+			"flows": {}
+		},
+		"http": {
+			"host": "<#default:127.0.0.1>",
+			"domain": "<#host.local>",
+			"port": "<#50100>",
+			"session": {
+				"secret": "<#please generate unique string>",
+				"cookieTemplate": {
+					"name": "session",
+					"domain": "<$initiator.http.domain>",
+					"path": "/",
+					"expirePeriod": "+172800000",
+					"httpOnly": true
+				}
+			},
+			"static": {
+				"root": "www",
+				"index": "index.html",
+				"headers": {}
+			},
+			"prepare": {
+				"post": {
+					"tasks": [
+						{
+							"$class": "post",
+							"request": "{$request}",
+							"$set": "request.body"
+						}
+					]
+				}
+			},
+			"flows": [{
+				"path": "last.json",
+				"tasks": [{
+					"$class": "mongoRequest",
+					"connector": "mongo",
+					"pager": {
+						"limit": 1,
+						"sort": {"_id": -1}
+					},
+					"collection": "rfduino_temp",
+					"$set": "records"
+				}],
+				"presenter": {
+					"type": "json",
+					"vars": "{$records}"
+				}
+			}, {
+				"path": "add.json",
+				"tasks": [{
+					"$class": "mongoRequest",
+					"connector": "mongo",
+					"method": "insert",
+					"data": {
+						"temp": "{$request.url.query.temp}"
+					},
+					"collection": "rfduino_temp",
+					"$set": "records"
+				}],
+				"presenter": {
+					"type": "json",
+					"vars": {"success": true}
+				}
+
+			}]
+		}
+	}
+}
