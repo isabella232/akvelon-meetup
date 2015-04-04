@@ -1,9 +1,10 @@
-Boards:
+Boards with wireless:
 
  * rfduino
  * esp8266
  * cc430
-
+ * stm32w
+ * cc2540/cc2640/cc2650
  
 
 
