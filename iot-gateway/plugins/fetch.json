@@ -10,5 +10,11 @@
             "type": "registry",
             "id": "com.megster.cordova.rfduino"
         }
+    },
+    "me.apla.cordova.http-client": {
+        "source": {
+            "type": "local",
+            "path": "/Users/apla/work/cordova/plugins/me.apla.cordova.http-client"
+        }
     }
 }

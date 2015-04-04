@@ -67,6 +67,23 @@ var app = {
 
 		tempCelsius.innerHTML = celsius.toFixed(2);
 		tempFahrenheit.innerHTML = fahrenheit.toFixed(2);
+
+		function ok (data) {
+			var bodyData = JSON.parse (data.body);
+			if (data.code === 200) {
+				document.getElementById ("tempLast").innerHTML = bodyData.data[0].temp;
+			}
+
+			console.log (data);
+		}
+
+		function fail (err) {
+			console.log (err);
+		}
+
+		plugins.HTTPClient.request (ok, fail, {
+			uri: 'http://apla.me:50100/last.json'
+		});
 	},
 	disconnect: function() {
 		rfduino.disconnect(app.showMainPage, app.onError);

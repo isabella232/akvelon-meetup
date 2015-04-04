@@ -26,6 +26,12 @@
                             "xml": "<feature name=\"RFduino\"><param name=\"ios-package\" onload=\"true\" value=\"MEGRFduino\" /></feature>",
                             "count": 1
                         }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"HTTPClient\"><param name=\"ios-package\" value=\"HTTPClient\" /></feature>",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -36,6 +42,9 @@
             "PACKAGE_NAME": "me.apla.iotgateway"
         },
         "com.megster.cordova.rfduino": {
+            "PACKAGE_NAME": "me.apla.iotgateway"
+        },
+        "me.apla.cordova.http-client": {
             "PACKAGE_NAME": "me.apla.iotgateway"
         }
     },
