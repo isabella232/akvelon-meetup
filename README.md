@@ -1,3 +1,18 @@
+Links:
+
+ * [cuwire IDE](http://cuwire.io)
+ * [cordova](http://cordova.io)
+ * [node.js](http://nodejs.org)
+
+Boards with wireless:
+
+ * rfduino
+ * esp8266
+ * cc430
+ * stm32w
+ * cc2540/cc2640/cc2650
+ 
+
 
 How To
 
